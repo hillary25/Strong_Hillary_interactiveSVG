@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black%7COpen+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="icon" href="/images/favicon.ico" type="image/png" sizes="16x16">
+
     <title>Sea Turtles - Interactive Infographic</title>
 
-    <link rel="icon" href="/images/favicon.ico" type="image/png" sizes="16x16">
 </head>
 <body>
   <header class="fill">
@@ -20,10 +21,26 @@
       <hr class="line">
 
       <h2 class="sub-header">This infographic was created to bring awareness to sea turtles and the dangers they face. There is a strong importance on taking care of the ocean and those living in it.</h2>
+
+      <h2 class="sub-header"><a href="#learnSpecies">Click me to learn more about the species</a></h2>
+      <h2 class="sub-header"><a href="#learnHelp">Click me to find out how you can help</a></h2>
   </header>
-    
+
+  <!-- Top Wave -->
+  <div class="wave-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#2f777d" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,138.7C640,160,800,224,960,240C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+      </svg>
+      </svg>
+    </div>
+
     <main>
         <!-- If we were using a framework, these might be 6-col or something-->
+      
+      <section id="learnSpecies">
+        <h2 class="title_text">Species</h2>
+        <p class="supporting_text">Worldwide, 6 out of 7 sea turtle species are identified as endangered or threatened due to human actions and lifestyles.</p>
+      </section>
       
       <section class="click_turtle">
           <div class="div_wrapper">
@@ -54,22 +71,23 @@
             <object data="images/leatherback_icon.svg" type="image/svg+xml" class="svg-graphic" id="leatherback"></object>
             <span class="see-more" data-target="7">Reveal Turtle 7</span>
           </div>
+      </section>
 
-          <section class="information">
+      <section class="information">
             <h3 class="getInfo">Click on a sea turtle label above to reveal more info!</h3>
             
             <div id="name">
-                <h2 class="species"></h2>
+              <h2 class="species"></h2>
             </div>
             <div id="species">
-                <div class="speciesSection">
-                    <p class="scientificName"></p>
-                </div>
-                <div class="speciesSection">
-                    <p class="weight"></p>
-                </div>
-                <div class="speciesSection">
-                  <p class="conservationStatus"></p>
+              <div class="speciesSection">
+                <p class="scientificName"></p>
+              </div>
+              <div class="speciesSection">
+                <p class="weight"></p>
+              </div>
+              <div class="speciesSection">
+                <p class="conservationStatus"></p>
               </div>
               <div class="speciesSection">
                 <p class="biggestThreat"></p>
@@ -77,6 +95,32 @@
             </div>
       </section>
 
+      <section id="learnHelp">
+          <h2 class="title_text">How To Help</h2>
+          <p class="supporting_text">These are 3 things you can do to help save sea turtles.</p>
+      </section>
+
+      <section id="help">
+          <div class="div_wrapper">
+              <object data="images/recycle_icon.svg" type="image/svg+xml" class="svg-graphic2 imageZoom"></object>
+              <p class="title_text2">Three R's</p>
+          </div>
+          <div class="div_wrapper">
+              <object data="images/heart_icon.svg" type="image/svg+xml" class="svg-graphic2 imageZoom"></object>
+              <p class="title_text2">Participate</p>
+          </div>
+          <div class="div_wrapper">
+              <object data="images/eggs_icon.svg" type="image/svg+xml" class="svg-graphic2 imageZoom"></object>
+              <p class="title_text2">Be Cautious</p>
+          </div>
+      </section>
+
+      <footer id="footer">
+        <div>
+          <object data="images/footer_icon.svg" type="image/svg+xml" class="svg-graphic2"></object>
+        </div>
+        <p class="footerText">Created by Hillary Strong. Copyright &copy; 2019.</p>
+      </footer>
 
     </main>
     <script src="js/main.js"></script>
