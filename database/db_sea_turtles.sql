@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 24, 2019 at 11:58 PM
+-- Generation Time: Nov 25, 2019 at 03:23 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -28,23 +28,25 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tbl_turtle_facts` (
   `id` int(11) NOT NULL,
+  `species` varchar(50) NOT NULL,
   `scientificName` varchar(50) NOT NULL,
+  `weight` varchar(20) NOT NULL,
   `conservationStatus` varchar(50) NOT NULL,
-  `weight` varchar(20) NOT NULL
+  `biggestThreat` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_turtle_facts`
 --
 
-INSERT INTO `tbl_turtle_facts` (`id`, `scientificName`, `conservationStatus`, `weight`) VALUES
-(1, 'Lepidochelys Kempii', 'Critically Endangered', '40 kg (Adult)'),
-(2, 'Lepidochelys Olivacea', 'Vulnerable', '45 kg (Adult)'),
-(3, 'Caretta Caretta', 'Endangered', '70 kg (Adult)'),
-(4, 'Eretmochelys Imbricata', 'Critically Endangered', '75 kg (Adult)'),
-(5, 'Natator Depressus', 'Data Deficient', '90 kg (Adult)'),
-(6, 'Chelonia Mydas', 'Endangered', '160 kg (Adult)'),
-(7, 'Dermochelys Coriacea', 'Vulnerable', '250 kg (Adult)');
+INSERT INTO `tbl_turtle_facts` (`id`, `species`, `scientificName`, `weight`, `conservationStatus`, `biggestThreat`) VALUES
+(1, 'Kemp Ridley', 'Lepidochelys Kempii', '40 kg', 'Critically Endangered', 'Bycatch'),
+(2, 'Olive Ridley', 'Lepidochelys Olivacea', '45 kg', 'Vulnerable', 'Urbanization'),
+(3, 'Loggerhead', 'Caretta Caretta', '65 kg', 'Endangered', 'Urbanization'),
+(4, 'Hawksbill', 'Eretmochelys Imbricata', '70 kg', 'Critically Endangered', 'Illegal Trade'),
+(5, 'Flatback', 'Natator Depressus', '90 kg', 'Data Deficient', 'Natural Predators'),
+(6, 'Green', 'Chelonia Mydas', '160 kg', 'Endangered', 'Plastic Debris'),
+(7, 'Leatherback', 'Dermochelys Coriacea', '250 kg', 'Vulnerable', 'Bycatch');
 
 --
 -- Indexes for dumped tables

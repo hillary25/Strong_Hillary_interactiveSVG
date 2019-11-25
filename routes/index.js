@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 });
 
 // Use this for portfolio
-router.get('/svgdata/:target', (req, res) => {
+router.get('/db_sea_turtles/:target', (req, res) => {
   // Here is where we set up the query
   let query = `SELECT * FROM tbl_turtle_facts WHERE id="${req.params.target}"`;
 

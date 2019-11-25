@@ -5,76 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black%7COpen+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Import Waypoint and Greensock here -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-
     <title>Sea Turtles - Interactive Infographic</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1 class="main-header">SVG with Greensock and Waypoint.js</h1>
+    <h1 class="main-header">7 Species of Sea Turtles and How to Save Them</h1>
+
+    <hr class="line">
+
+    <h2 class="sub-header">This infographic was created to bring awareness to sea turtles and the dangers they face.</h2>
     <main>
-        <!-- if we were using a framework, these might be 6-col or something-->
-        <section id="beer1">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/bottleGraphic.svg" type="image/svg+xml" class="svg-graphic" id="bottle"></object>
-            <span class="see-more" data-target="1">See More</span> 
+        <!-- If we were using a framework, these might be 6-col or something-->
+      
+      <section class="click_turtle">
+          <div class="div_wrapper">
+              <object data="images/kempridley_icon.svg" type="image/svg+xml" class="svg-graphic" id="kempridley"></object>
+              <span class="see-more" data-target="1">Reveal Turtle 1</span>
+          </div>
+          <div class="div_wrapper">
+            <object data="images/oliveridley_icon.svg" type="image/svg+xml" class="svg-graphic" id="oliveridley"></object>
+            <span class="see-more" data-target="2">Reveal Turtle 2</span>
+          </div>
+          <div class="div_wrapper">
+            <object data="images/loggerhead_icon.svg" type="image/svg+xml" class="svg-graphic" id="loggerhead"></object>
+            <span class="see-more" data-target="3">Reveal Turtle 3</span>
+          </div>
+          <div class="div_wrapper">
+            <object data="images/hawksbill_icon.svg" type="image/svg+xml" class="svg-graphic" id="hawksbill"></object>
+            <span class="see-more" data-target="4">Reveal Turtle 4</span>
+          </div>
+          <div class="div_wrapper">
+            <object data="images/flatback_icon.svg" type="image/svg+xml" class="svg-graphic" id="flatback"></object>
+            <span class="see-more" data-target="5">Reveal Turtle 5</span>
+          </div>
+          <div class="div_wrapper">
+            <object data="images/green_icon.svg" type="image/svg+xml" class="svg-graphic" id="green"></object>
+            <span class="see-more" data-target="6">Reveal Turtle 6</span>
+          </div>
+          <div class="div_wrapper">
+            <object data="images/leatherback_icon.svg" type="image/svg+xml" class="svg-graphic" id="leatherback"></object>
+            <span class="see-more" data-target="7">Reveal Turtle 7</span>
           </div>
 
-          <div class="text-wrapper">
-            <h3>Beer In Glasses</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-            <p>
-              Possimus consequuntur amet illum ipsa laborum accusantium, dolor neque magnam ipsum, adipisci deserunt distinctio necessitatibus asperiores ad nulla? Repellendus nobis, eveniet perspiciatis. Quisquam molestiae beatae laborum quo impedit nobis quod.
-            </p>
-          </div>
-        </section>
+          <section class="information">
+            <h3 class="getInfo">Click on a sea turtle label above to reveal more info!</h3>
+            
+            <div id="name">
+                <h2 class="species"></h2>
+            </div>
+            <div id="species">
+                <div class="speciesSection">
+                    <p class="scientificName"></p>
+                </div>
+                <div class="speciesSection">
+                    <p class="weight"></p>
+                </div>
+                <div class="speciesSection">
+                  <p class="conservationStatus"></p>
+              </div>
+              <div class="speciesSection">
+                <p class="biggestThreat"></p>
+            </div>
+            </div>
 
-        <section id="beer2">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/beerBarrels.svg" type="image/svg+xml" class="svg-graphic" id="barrels"></object>
-            <span class="see-more" data-target="2">See More</span> 
-          </div>
+          
+      </section>
 
-          <div class="text-wrapper">
-            <h3>Beer In Barrels</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-            <p>
-              Possimus consequuntur amet illum ipsa laborum accusantium, dolor neque magnam ipsum, adipisci deserunt distinctio necessitatibus asperiores ad nulla? Repellendus nobis, eveniet perspiciatis. Quisquam molestiae beatae laborum quo impedit nobis quod.
-            </p>
-          </div>
-        </section>
-
-        <section id="beer3">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/qualityBeer.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
-            <span class="see-more" data-target="3">See More</span> 
-          </div>
-
-          <div class="text-wrapper">
-            <h3>Beer in Fancy Glasses</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-          </div>
-        </section>
-
-        <!-- <section class="buffer"></section> -->
-        <article class="popover">
-            <h4 class="ipa-rating">IPA Rating</h4>
-            <div class="ratings">Average Rating: </div>
-            <p class="beer-description"></p>
-
-        </article>
 
     </main>
     <script src="js/main.js"></script>

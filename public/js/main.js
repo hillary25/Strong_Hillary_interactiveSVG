@@ -1,22 +1,24 @@
 (() => {
     // Try to interact with the object and get it to interact back
     const seeMoreButtons = document.querySelectorAll('.see-more'),
-          popOver = document.querySelector('.popover');
+          popOver = document.querySelector('.information');
 
-    function buildPopover(db_sea_turtles, el) {
-        popOver.querySelector(".ipa-rating").textContent = `Scientific Name: ${db_sea_turtles.scientificName}`;
-        popOver.querySelector(".ratings").textContent = `Conservation Status: ${db_sea_turtles.conservationStatus}`;
-        popOver.querySelector(".beer-description").textContent = `Weight: ${db_sea_turtles.weight}`;
-
+    function buildPopover(seaturtlestats, el) {
+        popOver.querySelector(".species").textContent = `Species: ${seaturtlestats.species}`;
+        popOver.querySelector(".scientificName").textContent = `Scientific Name: ${seaturtlestats.scientificName}`;
+        popOver.querySelector(".weight").textContent = `Weight: ${seaturtlestats.weight}`;
+        popOver.querySelector(".conservationStatus").textContent = `Conservation Status: ${seaturtlestats.conservationStatus}`;
+        popOver.querySelector(".biggestThreat").textContent = `Biggest Threat: ${seaturtlestats.biggestThreat}`;
+        
         // Show the popover
         popOver.classList.add('show-popover');
-        el.appendChild(popOver);
+        // el.appendChild(popOver);
     }
 
     // Run the fetch API and get the DB data
     function fetchData() {
         let targetEl = this,
-            url = `/svgdata/${this.dataset.target}`;
+            url = `/db_sea_turtles/${this.dataset.target}`;
 
         fetch(url)
         .then(res => res.json())
@@ -31,7 +33,7 @@
         .catch((err) => console.log(err));
     }
 
-    const svgGraphic = document.querySelector(".svg-wrapper");
+    // const svgGraphic = document.querySelector(".svg-wrapper");
 
     // svgGraphic.addEventListener("click", () => {
     //     console.log(this.querySelector('.svg-graphic'));
