@@ -1,5 +1,5 @@
 # Sea Turtles - Interactive Infographic
-This is a homework assignment for Fanshawe College. We are to create an interactive infographic based off the infographic produced in design class. Also, some data of the data should be fetched from a database.
+This is a homework assignment for Fanshawe College. We are to create an interactive infographic web app based off the infographic produced in design class. Also, some infographic data should be fetched from a database.
 ## Built With
 * [Sass](https://sass-lang.com "Sass") - Syntactically Awesome Style Sheets
 * [Node.js](https://nodejs.org/en/ "Node") - JavaScript Run-time Environment
@@ -9,6 +9,7 @@ This is a homework assignment for Fanshawe College. We are to create an interact
 * **Hillary Strong** (https://github.com/hillary25)
 ## Things I Wanted to Achieve
 - [x] Draw data from a database
+- [x] Click on each sea turtle label and fetch information
 ## Installation
 Open Terminal on your computer and install [npm](https://www.npmjs.com/get-npm "npm") if not already done so. Then follow:
 ```
