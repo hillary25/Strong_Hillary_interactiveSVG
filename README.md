@@ -1,36 +1,39 @@
 # Sea Turtles - Interactive Infographic
-This is a homework assignment for Fanshawe College. We are to create an interactive infographic based off the infographic produced in design class. Also, some data of the data should be fetched from a database.
-## Built With
-* [Sass](https://sass-lang.com "Sass") - Syntactically Awesome Style Sheets
-* [Node.js](https://nodejs.org/en/ "Node") - JavaScript Run-time Environment
-* [Express](https://expressjs.com "Express") - Framework for Node.js
-* [SQL](https://www.w3schools.com/sql/ "SQL") - Database
+This is a homework assignment for Fanshawe College. We are to create an interactive infographic web app based off the infographic produced in design class. Also, some infographic data should be fetched from a database.
 ## Author
 * **Hillary Strong** (https://github.com/hillary25)
+## Built With
+* [Node.js](https://nodejs.org/en/ "Node") - JavaScript Run-time Environment
+* [Express](https://expressjs.com "Express") - Framework for Node.js
+* [NPM](https://www.npmjs.com/ "NPM") - JavaScript Development Tools
+* [PHP MySQL](https://www.w3schools.com/sql/ "SQL") - Database
 ## Things I Wanted to Achieve
 - [x] Draw data from a database
+- [x] Click on each sea turtle label and fetch information
 ## Installation
 Open Terminal on your computer and install [npm](https://www.npmjs.com/get-npm "npm") if not already done so. Then follow:
 ```
-# Pick the location of where you want this repository stored - for example purposes, this will be located on your desktop
+# Pick the location of where you want this repository stored - for example purposes, this will be located on your desktop.
 
 $ cd Desktop
 
-# Clone this repository to your local machine
+# Clone this repository to your local machine.
 
-$ git clone https://github.com/hillary25/Strong_H_FavouriteThings.git
+$ git clone https://github.com/hillary25/Strong_Hillary_interactiveSVG.git
 
-# Install dependencies inside the folder
+# Install dependencies inside the project folder.
 
 $ npm install
 
-# Insert database inside the data folder onto your PHPMyAdmin
+# Import the database into your PHPMyAdmin.
 
-# Run npm
+# Run the local server MAMP (or WAMP).
+
+# Run NPM.
 
 $ npm start
 
-# The site should be running on your localhost:3000
+# The site should be running on localhost:3000 in a browser.
 ```
 ## Acknowledgements
 * Fonts (https://fonts.google.com)
