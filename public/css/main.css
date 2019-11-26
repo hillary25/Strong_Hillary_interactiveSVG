@@ -127,22 +127,18 @@ header {
   position: relative;
   background: #d3ecee;
   overflow: hidden; }
-    .wave-container >svg {
-      display: block;
-      margin: 0 auto;
-      display: block;
-      transform-origin: bottom;
-      animation: animateWave 2s cubic-bezier(0.23, 1, 0.32, 1) forwards !important;
-}
+  .wave-container > svg {
+    display: block;
+    margin: 0 auto;
+    display: block;
+    transform-origin: bottom;
+    animation: animateWave 2s cubic-bezier(0.23, 1, 0.32, 1) forwards !important; }
 
 @keyframes animateWave {
   0% {
-    transform: scale(1,0);
-  }
+    transform: scale(1, 0); }
   100% {
-     transform: scale(1,1);
-  }
-}
+    transform: scale(1, 1); } }
 
 .fill {
   width: 100%; }
@@ -193,8 +189,11 @@ section > div:not(.text-wrapper) {
   padding-top: 5px; }
 
 a {
-  color: #2f777d;
-  text-decoration: none; }
+  color: white;
+  text-decoration: none;
+  background-color: #2f777d;
+  padding: 10px 10px 10px 10px;
+  border-radius: 7px 7px 7px 7px; }
   a:hover {
     color: #133030;
     text-decoration: none;
@@ -235,6 +234,9 @@ a {
   margin: 0 auto;
   padding-bottom: 15px; }
 
+.sub-header {
+  padding: 15px; }
+
 .div_wrapper {
   width: 20%;
   display: inline-block;
@@ -247,10 +249,43 @@ hr {
   border-radius: 7px 7px 7px 7px;
   width: 85%; }
 
+#learnFacts {
+  padding-top: 20px; }
+
 @media screen and (max-width: 992px) {
   .div_wrapper {
-    width: 30%; } }
+    width: 30%; }
+  .pictureContainer {
+    margin: 10px; } }
 
 @media screen and (max-width: 600px) {
   .div_wrapper {
-    width: 30%; } }
+    width: 30%; }
+  .pictureContainer {
+    margin: 10px; } }
+
+.factsSection {
+  background-color: #01a6af;
+  width: 50%;
+  border-radius: 25px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px; }
+
+.pictureContainer {
+  display: inline-block;
+  height: 150px;
+  overflow: hidden;
+  width: 170px; }
+
+.pictureContainer img {
+  position: relative;
+  transform: translate3d(0px 0px 0px);
+  transition: transform .5s ease-in-out; }
+
+.pictureContainer img:hover {
+  transform: translate3d(0px -140px 0px);
+  top: -155px; }

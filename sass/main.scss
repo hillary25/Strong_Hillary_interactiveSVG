@@ -116,8 +116,11 @@ section {
 }
 
 a {
-	color: $color_3;
+	color: $color_4;
 	text-decoration: none;
+	background-color: $color_3;
+	padding: 10px 10px 10px 10px;
+	border-radius: 7px 7px 7px 7px;
 	&:hover {
 		color: $color_1;
 		text-decoration: none;
@@ -164,6 +167,10 @@ a {
 	padding-bottom: 15px;
 }
 
+.sub-header {
+	padding: 15px;
+}
+
 .div_wrapper {
 	width: 20%;
 	display: inline-block;
@@ -178,9 +185,16 @@ hr {
 	width: 85%;
 }
 
+#learnFacts {
+	padding-top: 20px;
+}
+
 @media screen and (max-width: 992px) {
 	.div_wrapper {
 		width: 30%;
+	}
+	.pictureContainer {
+		margin: 10px;
 	}
 }
 
@@ -188,4 +202,37 @@ hr {
 	.div_wrapper {
 		width: 30%;
 	}
+	.pictureContainer {
+		margin: 10px;
+	}
+}
+
+.factsSection {
+	background-color: $color_5;
+	width: 50%;
+	border-radius: 25px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.pictureContainer {
+	display: inline-block;
+	height: 150px;
+	overflow: hidden;
+	width: 170px;
+}
+
+.pictureContainer img {
+	position: relative;
+	transform: translate3d(0px 0px 0px);
+	transition: transform .5s ease-in-out;
+}
+
+.pictureContainer img:hover {
+	transform: translate3d(0px -140px 0px);
+	top: -155px;
 }
