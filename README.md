@@ -3,13 +3,15 @@ This is a homework assignment for Fanshawe College. We are to create an interact
 ## Author
 * **Hillary Strong** (https://github.com/hillary25)
 ## Built With
+* [PHP MySQL](https://www.w3schools.com/sql/ "SQL") - Database
 * [Node.js](https://nodejs.org/en/ "Node") - JavaScript Run-time Environment
 * [Express](https://expressjs.com "Express") - Framework for Node.js
 * [NPM](https://www.npmjs.com/ "NPM") - JavaScript Development Tools
-* [PHP MySQL](https://www.w3schools.com/sql/ "SQL") - Database
+* [Sass](https://sass-lang.com/ "Sass") - Syntactically Awesome Style Sheets
 ## Things I Wanted to Achieve
 - [x] Draw data from a database
 - [x] Click on each sea turtle label and fetch information
+- [x] Add some interactive elements such as hover over image and wave
 ## Installation
 Open Terminal on your computer and install [npm](https://www.npmjs.com/get-npm "npm") if not already done so. Then follow:
 ```

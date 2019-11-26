@@ -2,13 +2,13 @@
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
 @font-face {
   font-family: 'cubano';
   src: url('Cubano.ttf') format('truetype');
-}
-
-.hidden {
-  display: none;
 }
 
 body { 
@@ -59,10 +59,6 @@ header {
 .buffer {
   min-height: 100vh
 }
-
-/* main {
-  margin: 2%;
-} */
 
 h1 {
   font-family: "cubano", sans-serif;
@@ -251,4 +247,45 @@ section > div:not(.text-wrapper) {
 
 .imageZoom:hover {
   transform: scale(1.5);
+  filter: contrast(150%);
+}
+
+/* On screens that are 992px or less, do these style changes */
+@media screen and (max-width: 992px) {
+  .see-more { 
+    font-size: 1em;
+    width: 70%;
+  }
+
+  .imageZoom {
+    padding: 2px;
+    transition: transform .3s;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .div_wrapper {
+    width: 30%;
+  }
+}
+
+/* On screens that are 600px or less, do these style changes */
+@media screen and (max-width: 600px) {
+  .see-more { 
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .imageZoom {
+    padding: 2px;
+    transition: transform .3s;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .div_wrapper {
+    width: 30%;
+  }
 }
