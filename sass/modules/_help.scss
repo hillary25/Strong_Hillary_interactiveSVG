@@ -1,0 +1,31 @@
+.imageZoom {
+	padding: 10px;
+	transition: transform .3s;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	&:hover {
+		transform: scale(1.5);
+		filter: contrast(150%);
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.imageZoom {
+		padding: 2px;
+		transition: transform .3s;
+		width: 150px;
+		height: 150px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.imageZoom {
+		padding: 2px;
+		transition: transform .3s;
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+	}
+}
