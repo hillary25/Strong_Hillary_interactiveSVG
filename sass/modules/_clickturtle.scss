@@ -1,0 +1,40 @@
+.click_turtle {
+	width: 100%;
+	height: 20%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.svg-graphic {
+	width: 80%;
+}
+
+.see-more {
+	cursor: pointer;
+	display: block;
+	font-size: 1.2em;
+	font-family: $font_family_2;
+	color: $color_4;
+	background-color: $background_color_4;
+	width: 65%;
+	margin-top: 10px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 6px;
+	margin-top: 5px;
+	border-radius: 7px 7px 7px 7px;
+}
+
+@media screen and (max-width: 992px) {
+	.see-more {
+		font-size: 1em;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.see-more {
+		font-size: 1em;
+		width: 100%;
+	}
+}
